@@ -2,7 +2,7 @@ package uk.co.compendiumdev.domain.randomisers;
 
 import java.util.Random;
 
-public class RandomPersonCreator {
+public class RandomPersonCreator implements RandomisedPersonCreator{
 
     Random r;
 

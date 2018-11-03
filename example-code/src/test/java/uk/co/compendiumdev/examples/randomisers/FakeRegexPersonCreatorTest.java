@@ -28,13 +28,13 @@ public class FakeRegexPersonCreatorTest {
 
         Assert.assertNotNull(name);
         Assert.assertTrue(name.length() > 2);
-        Assert.assertEquals("Vhsr", name);
+        Assert.assertEquals("Vhs", name);
 
-        Assert.assertEquals("Vlqrvi", pc.getRandomFirstName());
-        Assert.assertEquals("Xdmx", pc.getRandomFirstName());
-        Assert.assertEquals("Ifqvm", pc.getRandomFirstName());
-        Assert.assertEquals("Mutbueei", pc.getRandomFirstName());
-        Assert.assertEquals("Fcdrdi", pc.getRandomFirstName());
+        Assert.assertEquals("Vlqii", pc.getRandomFirstName());
+        Assert.assertEquals("Xdmhsfo", pc.getRandomFirstName());
+        Assert.assertEquals("Ifq", pc.getRandomFirstName());
+        Assert.assertEquals("Mutfpm", pc.getRandomFirstName());
+        Assert.assertEquals("Fcdm", pc.getRandomFirstName());
 
     }
 }

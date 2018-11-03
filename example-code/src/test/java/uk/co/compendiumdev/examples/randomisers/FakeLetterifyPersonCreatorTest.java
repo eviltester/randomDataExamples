@@ -29,13 +29,13 @@ public class FakeLetterifyPersonCreatorTest {
 
         Assert.assertNotNull(name);
         Assert.assertTrue(name.length() > 2);
-        Assert.assertEquals("Mjdpgo", name);
+        Assert.assertEquals("Sfcpi", name);
 
-        Assert.assertEquals("Umjrnp", pc.getRandomFirstName());
-        Assert.assertEquals("Wqden", pc.getRandomFirstName());
-        Assert.assertEquals("Olbcn", pc.getRandomFirstName());
-        Assert.assertEquals("Bzdpt", pc.getRandomFirstName());
-        Assert.assertEquals("Vokbk", pc.getRandomFirstName());
+        Assert.assertEquals("Cjbxjfz", pc.getRandomFirstName());
+        Assert.assertEquals("Fzia", pc.getRandomFirstName());
+        Assert.assertEquals("Nulv", pc.getRandomFirstName());
+        Assert.assertEquals("Vrrekl", pc.getRandomFirstName());
+        Assert.assertEquals("Yaq", pc.getRandomFirstName());
 
     }
 }

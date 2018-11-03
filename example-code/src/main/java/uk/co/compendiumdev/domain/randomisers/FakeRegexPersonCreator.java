@@ -30,7 +30,9 @@ public class FakeRegexPersonCreator implements RandomisedPersonCreator {
         final Integer len = rnd.nextInt(3, 7);   // name length between 3 and 7
 
         //"[A-Z][a-z]{3,7}"
-        return f.regexify(String.format("[A-Z][a-z]{3,%d}",len));
+        // len -1 because it does not inlude first char
+        String pattern = String.format("[A-Z][a-z]{2,%d}",len-1);
+        return f.regexify(pattern);
 
     }
 }
