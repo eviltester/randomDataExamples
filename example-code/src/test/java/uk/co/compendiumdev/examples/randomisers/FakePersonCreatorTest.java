@@ -1,8 +1,9 @@
 package uk.co.compendiumdev.examples.randomisers;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
 import uk.co.compendiumdev.domain.randomisers.FakePersonCreator;
+import uk.co.compendiumdev.junitmigration.tojunit5.Assert;
 
 public class FakePersonCreatorTest {
 

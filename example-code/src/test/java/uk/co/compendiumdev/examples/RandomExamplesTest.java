@@ -1,7 +1,8 @@
 package uk.co.compendiumdev.examples;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+import uk.co.compendiumdev.junitmigration.tojunit5.Assert;
 
 import java.util.Random;
 

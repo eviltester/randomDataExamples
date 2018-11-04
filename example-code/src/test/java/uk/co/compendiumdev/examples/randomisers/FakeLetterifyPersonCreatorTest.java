@@ -1,11 +1,12 @@
 package uk.co.compendiumdev.examples.randomisers;
 
-import org.junit.Assert;
-import org.junit.Test;
+
+
+
+import org.junit.jupiter.api.Test;
 import uk.co.compendiumdev.domain.randomisers.FakeLetterifyPersonCreator;
-import uk.co.compendiumdev.domain.randomisers.FakePersonCreator;
-import uk.co.compendiumdev.domain.randomisers.FakeRegexPersonCreator;
 import uk.co.compendiumdev.domain.randomisers.RandomisedPersonCreator;
+import uk.co.compendiumdev.junitmigration.tojunit5.Assert;
 
 public class FakeLetterifyPersonCreatorTest {
 
@@ -27,7 +28,7 @@ public class FakeLetterifyPersonCreatorTest {
 
         final String name = pc.getRandomFirstName();
 
-        Assert.assertNotNull(name);
+        Assert.assertNotNull("name should not be null", name);
         Assert.assertTrue(name.length() > 2);
         Assert.assertEquals("Sfcpi", name);
 
