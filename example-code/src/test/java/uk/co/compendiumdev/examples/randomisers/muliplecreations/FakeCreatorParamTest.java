@@ -1,12 +1,10 @@
 package uk.co.compendiumdev.examples.randomisers.muliplecreations;
 
-
-
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import uk.co.compendiumdev.domain.randomisers.*;
+import uk.co.compendiumdev.junitmigration.toassertj.Assert;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -49,10 +47,9 @@ public class FakeCreatorParamTest {
 
         // because I'm using letterify I can't guarantee the length of name
 
-        Assertions.assertNotNull(name);
-        Assertions.assertTrue(
-                Character.isUpperCase(name.charAt(0)),
-                "should start with uppercase letter");
+        Assert.assertNotNull(name);
+        Assert.assertTrue("should start with uppercase letter",
+                Character.isUpperCase(name.charAt(0)));
         //checkThatGivenNameIsBetweenThreeAndSevenChars(name);
     }
 
@@ -73,17 +70,17 @@ public class FakeCreatorParamTest {
 
 
     public void checkThatGivenNameIsBetweenThreeAndSevenChars(String name){
-        Assertions.assertTrue(
-                name.length()>=3,
-                "is less than 3 in length");
+        Assert.assertTrue("is less than 3 in length",
+                name.length()>=3);
 
-        Assertions.assertTrue(
-                name.length()<=7,
-                "is greater than 7 in length");
+        Assert.assertTrue(
+                "is greater than 7 in length",
+                name.length()<=7
+                );
 
-        Assertions.assertTrue(
-                Character.isUpperCase(name.charAt(0)),
-                "should start with uppercase letter");
+        Assert.assertTrue("should start with uppercase letter",
+                Character.isUpperCase(name.charAt(0))
+                );
     }
 
 
