@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.MethodSource;
 import uk.co.compendiumdev.domain.randomisers.*;
-import uk.co.compendiumdev.junitmigration.tojunit5.Assert;
+import uk.co.compendiumdev.junitmigration.toassertj.Assert;
 
 import java.util.ArrayList;
 import java.util.List;

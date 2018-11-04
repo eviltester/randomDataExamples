@@ -2,7 +2,7 @@ package uk.co.compendiumdev.domain;
 
 
 import org.junit.jupiter.api.Test;
-import uk.co.compendiumdev.junitmigration.tojunit5.Assert;
+import uk.co.compendiumdev.junitmigration.toassertj.Assert;
 
 public class CreditCardIssuerTest {
 

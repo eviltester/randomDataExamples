@@ -2,7 +2,7 @@ package uk.co.compendiumdev.examples.randomisers;
 
 import org.junit.jupiter.api.Test;
 import uk.co.compendiumdev.domain.randomisers.RandomPersonCreator;
-import uk.co.compendiumdev.junitmigration.tojunit5.Assert;
+import uk.co.compendiumdev.junitmigration.toassertj.Assert;
 
 public class RandomPersonCreatorTest {
 
